@@ -29,20 +29,32 @@ body {
     padding: 0 20px;
 }
 .button {
+    cursor: pointer;
     text-align: center;
 text-transform: uppercase;
 padding: 16px 100px;
-background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+background: #F9804B;
 border-radius: 25px;
 border: none;
 color: #ffffff;
+}
+.button:hover {
+    background-color: #E47209;
+    transition: 0.2s;
+}
+.button:active {
+    background: #4B9200;
+    transition: 0.2s linear;
+}
+.button:disabled {
+    background: #767474;
 }
 
 /* header starts*/
 
 .header {
     background-color: #000000;
-    padding: 10px 0;
+    padding: 12px 0;
 }
 
 .header__nav {
@@ -58,6 +70,7 @@ color: #ffffff;
 }
 
 .header__logo {
+    position: relative;
     padding: 5px;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
@@ -71,17 +84,26 @@ color: #ffffff;
     line-height: 120%;
 }
 
+
+.logo-bamboo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
 .navigation__list {
     display: inline-flex;
 }
 
-.active {
+.active, .navigation__link:hover {
     color: #F9804B;
+    transition: 0.2s;
 }
 
 .navigation__item+.navigation__item {
     margin-left: 58px;
 }
+
 
 /* header ends*/
 
@@ -89,21 +111,20 @@ color: #ffffff;
 
 .watch {
     position: relative;
-    padding-bottom: 80px;
-    z-index: -10;
+    padding-bottom: 60px;
     background: url('../../assets/images/panda-background.png') no-repeat;
     background-size: 100%;
-    transform: translateY(-15%);
 }
 
+
 .watch__circle-container {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 .watch__circle {
     margin-left: auto;
     margin-right: 95px;  
     position: relative;
-    top: 140px;
+    top: 12px;
     background: url('../../assets/images/circle.svg') no-repeat;
     background-size: contain;
     width: 440px;
@@ -133,4 +154,5 @@ margin-left: auto;
 margin-right: 95px;  
 margin-bottom: 100px;
 }
+
 /* section watch ends*/
