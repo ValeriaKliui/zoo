@@ -22,7 +22,10 @@ body {
     font-family: 'Roboto';
     color: #ffffff;
 }
-
+img {
+        height: auto;
+        width: 100%;      
+}
 .wrapper {
     max-width: 1140px;
     margin: 0 auto;
@@ -87,8 +90,9 @@ color: #ffffff;
 
 .logo-bamboo {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 5px;
+    left: -25px;
+    height: 20px;
 }
 
 .navigation__list {
