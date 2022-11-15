@@ -32,7 +32,7 @@ body {
     cursor: pointer;
     text-align: center;
 text-transform: uppercase;
-padding: 16px 100px;
+padding: 16px 84px;
 background: #F9804B;
 border-radius: 25px;
 border: none;
@@ -71,7 +71,7 @@ color: #ffffff;
 
 .header__logo {
     position: relative;
-    padding: 5px;
+    padding: 1px;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
 }
@@ -111,18 +111,17 @@ color: #ffffff;
 
 .watch {
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 97px;
     background: url('../../assets/images/panda-background.png') no-repeat;
     background-size: 100%;
 }
 
-
 .watch__circle-container {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .watch__circle {
     margin-left: auto;
-    margin-right: 95px;  
+    margin-right: 101px;  
     position: relative;
     top: 12px;
     background: url('../../assets/images/circle.svg') no-repeat;
@@ -133,12 +132,12 @@ color: #ffffff;
 
 .watch__text {
     position: relative;
-    top: 65px;
+    top: 72px;
     left: 76px;
     display: block;
     font-weight: 700;
-    font-size: 106.496px;
-    line-height: 75%;
+    font-size: 103px;
+    line-height: 80px;
     text-transform: uppercase;
     color: #ffffff;
     word-spacing: 9999999px;
@@ -152,7 +151,6 @@ color: #ffffff;
 display: block;
 margin-left: auto;
 margin-right: 95px;  
-margin-bottom: 100px;
 }
 
 /* section watch ends*/
