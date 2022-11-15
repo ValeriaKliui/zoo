@@ -154,3 +154,34 @@ margin-right: 95px;
 }
 
 /* section watch ends*/
+
+/* section backstage starts*/
+
+.backstage {
+    color: #000000;
+    position: relative;
+}
+
+.flower1 {
+    position: absolute;
+    right: 0;
+    top: -100px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.backstage__grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50% 465px;
+    gap: 87px;
+}
+.backstage__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;    
+}
+.backstage__photo {
+    backdrop-filter: blur(2px);
+}
+
+/* section backstage ends*/
