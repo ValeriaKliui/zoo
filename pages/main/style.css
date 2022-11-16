@@ -22,33 +22,39 @@ body {
     font-family: 'Roboto';
     color: #ffffff;
 }
+
 img {
-        height: auto;
-        width: 100%;      
+    height: auto;
+    width: 100%;
 }
+
 .wrapper {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 .button {
     cursor: pointer;
     text-align: center;
-text-transform: uppercase;
-padding: 16px 84px;
-background: #F9804B;
-border-radius: 25px;
-border: none;
-color: #ffffff;
+    text-transform: uppercase;
+    padding: 16px 84px;
+    background: #F9804B;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
 }
+
 .button:hover {
     background-color: #E47209;
     transition: 0.2s;
 }
+
 .button:active {
     background: #4B9200;
     transition: 0.2s linear;
 }
+
 .button:disabled {
     background: #767474;
 }
@@ -99,7 +105,8 @@ color: #ffffff;
     display: inline-flex;
 }
 
-.active, .navigation__link:hover {
+.active,
+.navigation__link:hover {
     color: #F9804B;
     transition: 0.2s;
 }
@@ -122,10 +129,13 @@ color: #ffffff;
 
 .watch__circle-container {
     margin-bottom: 80px;
+    width: 100%;
+    height: auto;
 }
+
 .watch__circle {
     margin-left: auto;
-    margin-right: 101px;  
+    margin-right: 101px;
     position: relative;
     top: 12px;
     background: url('../../assets/images/circle.svg') no-repeat;
@@ -148,22 +158,26 @@ color: #ffffff;
     margin: 0;
     text-align: center;
 }
-.color{
+
+.color {
     color: #FFEE2E;
 }
+
 .watch__button {
-display: block;
-margin-left: auto;
-margin-right: 95px;  
+    display: block;
+    margin-left: auto;
+    margin-right: 95px;
 }
 
 /* section watch ends*/
 
 /* section backstage starts*/
 
+
 .backstage {
     color: #000000;
     position: relative;
+    margin-bottom: 155px;
 }
 
 .flower1 {
@@ -175,26 +189,159 @@ margin-right: 95px;
 }
 
 .backstage__grid {
-    margin-top: 125px;
+    margin-top: 130px;
     display: grid;
-    grid-template-columns: 580px 465px;
-    gap: 82px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 400px);
+    gap: 80px;
 }
+
 .backstage__title {
     margin: 0;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 120%;    
+    font-size: 46px;
+    line-height: 58px;
+    text-overflow: ellipsis;
 }
+
 .backstage_subtitle {
-    margin-top: 54px;
+    margin-top: 30px;
+    margin-bottom: 0;
     font-weight: 400;
-font-size: 24px;
-line-height: 120%;
+    font-size: 24px;
+    line-height: 58px;
 }
+
+.backstage__text {
+    line-height: 22px;
+    font-size: 14px;
+}
+
 .backstage__photo {
-    width: 580px;
+    width: 578px;
     backdrop-filter: blur(2px);
 }
 
 /* section backstage ends*/
+
+/* section pets starts*/
+
+.pets {
+    position: relative;
+}
+.arrow-left,
+.arrow-right 
+{
+    position: absolute;
+        top: 40%;
+}
+
+.arrow__button-left {
+    position: relative;
+    left: -85px;
+}
+
+.arrow__button-right {
+    position: relative;
+right: -1120px;
+}
+
+.arrow__button-left,
+.arrow__button-right {
+    cursor: pointer;
+    width: 62px;
+    height: 62px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+    border: 0;
+    color: #ffffff;
+}
+
+
+.arrow__button-left:hover,
+.arrow__button-right:hover {
+    background-color: #E47209;
+    transition: 0.2s;
+}
+
+.arrow__button-left:active,
+.arrow__button-right:active {
+    background: #4B9200;
+    transition: 0.2s linear;
+}
+
+.pets__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 406px);
+    gap: 20px 30px;
+    margin-bottom: 70px;
+}
+
+.pets__item {
+    border-radius: 6px;
+    border: orange solid 1px;
+}
+
+.pets__item-img {
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+}
+
+.pets__text {
+    position: relative;
+    padding: 5px 14px;
+}
+
+.pets__item-title {
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.pets__item-text {
+    color: #000000;
+    margin: 0;
+}
+
+.pets__icon {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 33px;
+    height: 37px;
+}
+
+.meet-fish__icon {
+    width: 48px;
+    height: 38px;
+}
+
+.pets__button {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding: 16px 55px;
+}
+
+.flower2 {
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 250px;
+}
+
+.flower3 {
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    width: 368px;
+    height: 275px;
+}
+
+/* section pets ends*/
