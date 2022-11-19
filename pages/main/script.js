@@ -7,3 +7,7 @@ for (let link of links) {
         link.classList.add('active');
     }
 }
+
+
+//pets sections increasing 
+let petsCards = document.querySelectorAll('.pets__item');
