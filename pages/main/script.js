@@ -2,12 +2,18 @@
 
 let links = document.querySelectorAll('.navigation__link');
 for (let link of links) {
-    console.log(link.href, window.location.href)
     if (link.href === window.location.href) {
         link.classList.add('active');
     }
 }
 
 
-//pets sections increasing 
-let petsCards = document.querySelectorAll('.pets__item');
+//cropping of testimoials 
+let testimonials = document.querySelectorAll('.testimonial__text');
+for (let testimonial of testimonials) {
+let testimonialText = testimonial.innerText;
+let slicedText = testimonialText.slice(0,478);
+if (slicedText.length<testimonialText.length){
+    testimonial.textContent = slicedText.trim() + '...';
+}
+}
