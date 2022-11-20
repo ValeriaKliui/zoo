@@ -8,7 +8,7 @@ for (let link of links) {
 
 
 //cropping of testimoials 
-let testimonials = document.querySelectorAll('.testimonial__text');
+let testimonials = document.querySelectorAll('.small-paragraph');
 for (let testimonial of testimonials) {
 let testimonialText = testimonial.innerText;
 let slicedText = testimonialText.slice(0,478);
