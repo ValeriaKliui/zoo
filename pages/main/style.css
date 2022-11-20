@@ -520,7 +520,9 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* footer starts*/
 
-
+.footer {
+    background-color: #111115;;
+}
 
 /* footer ends*/
 
