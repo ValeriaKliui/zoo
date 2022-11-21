@@ -88,12 +88,13 @@
         <section class="backstage">
             <div class="wrapper">
                 <img class="flower1" src="../../assets/images/flower1.png"">
-                <div class=" backstage__grid">
-                <img src="../../assets/images/bamboo-cap.png" alt="photo" class="backstage__photo">
-                <div class="backstage__text-container">
+                <div class=" backstage__grid">  
+                    <div class="backstage__photo-container">
+</div>
+                    <div class="backstage__text-container">
                     <h2 class="backstage__title">
                         The Backstage of the Wilderness World.
-                    </h3>
+                    </h2>
                     <p class="backstage__text">
                         The site was founded on the basis of a volunteer movement to protect and care for animals.
                     </p>
@@ -270,9 +271,11 @@
                                 </p>
                             </div>
                         </div>
+                        <form action="../donate/index.html" target="_blank">
                         <button class="button button-round pick-and-feed__button">
                             Feed a friend now
                         </button>
+                    </form>
                     </div>
                 </div>
         </section>
@@ -432,8 +435,8 @@
                     <p class="footer__subtitle subtitle">
                         Subscribe to our news
                     </p>
-                    <form action="#" class="footer__container">
-                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <form class="footer__container">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
                         <input type="submit" id='submit' value="Submit">
                     </form>
                 </div>
@@ -445,36 +448,44 @@
                <div class="networks">
                  <ul class="networks__list">
                     <li class="networks__item">
+                        <a href="#">
                         <div class="network__icon">
                             <img src="../../assets/icons/fb.svg" alt="facebook" class="network__pic">
                         </div>
                         <p class="network__text">
                             Facebook
                         </p>
+                    </a>
                     </li>
                     <li class="networks__item">
+                        <a href="#">
                         <div class="network__icon">
                             <img src="../../assets/icons/tw.svg" alt="twitter" class="network__pic">
                         </div>
                         <p class="network__text">
                             Twitter
                         </p>
+                        </a>
                     </li>
                     <li class="networks__item">
+                        <a href="#">
                         <div class="network__icon">
                             <img src="../../assets/icons/ig.svg" alt="instagram" class="network__pic">
                         </div>
                         <p class="network__text">
                             Instagram
                         </p>
+                        </a>
                     </li>
                     <li class="networks__item">
+                        <a href="#">
                         <div class="network__icon">
                             <img src="../../assets/icons/yt.svg" alt="youtube" class="network__pic">
                         </div>
                         <p class="network__text">
                             Youtube
                         </p>
+                        </a>
                     </li>
                 </ul>
             </div>

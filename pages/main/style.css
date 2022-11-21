@@ -109,7 +109,7 @@ img {
     transition: 0.2s;
 }
 
-rgb(81, 42, 42) .button-round:active,
+.button-round:active,
 .button-box:active {
     background: #4B9200;
     transition: 0.2s linear;
@@ -257,13 +257,11 @@ logo__container {
     margin-top: 130px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 400px);
-    gap: 80px;
+    gap: 0 80px;
 }
 
-.backstage__photo {
-    width: 578px;
-    backdrop-filter: blur(2px);
+.backstage__photo-container {
+    background-image: url('../../assets/images/bamboo-cap.png');
 }
 
 /* section backstage ends*/
@@ -295,7 +293,7 @@ logo__container {
     cursor: pointer;
     width: 62px;
     height: 62px;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    background: #F9804B;
     border-radius: 50%;
     border: 0;
     color: #ffffff;
