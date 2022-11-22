@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/styles/normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>Main</title>
@@ -27,7 +27,7 @@
                             <img src="../../assets/icons/logo-bamboo.svg" alt="bamboo" class="logo-bamboo">
                         </a>
                     </div>
-                    <nav class="navigation">
+                    <nav class="navigation-desktop">
                         <ul class="navigation__list">
                             <li class="navigation__item">
                                 <a class="navigation__link" href='index.html'>
@@ -88,10 +88,9 @@
         <section class="backstage">
             <div class="wrapper">
                 <img class="flower1" src="../../assets/images/flower1.png"">
-                <div class=" backstage__grid">  
-                    <div class="backstage__photo-container">
-</div>
-                    <div class="backstage__text-container">
+                <div class=" backstage__grid">
+                <div class="backstage__photo-container"></div>
+                <div class="backstage__text-container">
                     <h2 class="backstage__title">
                         The Backstage of the Wilderness World.
                     </h2>
@@ -213,7 +212,7 @@
                     <div class="pick-and-feed__container">
                         <h2 class="pick-and-feed__title">
                             Pick and feed a friend
-                        </h3>
+                        </h2>
                         <h4 class="pick-and-feed__subtitle subtitle">
                             We know the animals bring you joy, and in these extraordinary times, we’re glad.
                         </h4>
@@ -232,50 +231,44 @@
                         </p>
                         <h3 class="pick-and-feed__small-title">
                             How it works
-                        </h4>
-                        <div class="how-it-works__container">
-                            <div class="container__item">
-                                <div class="item__photo">
-                                    <img src="../../assets/icons/pay.svg" alt="icon" class="item__icon">
+                            </h4>
+                            <div class="how-it-works__container">
+                                <div class="container__item">
+                                    <div class="item__photo">
+                                        <img src="../../assets/icons/pay.svg" alt="icon" class="item__icon">
+                                    </div>
+                                    <p class="pick-and-feed__subtext">
+                                        Pay with card
+                                    </p>
+                                </div>
+                                <div class="container__item container__arrow">
+                                    <img src="../../assets/images/arrow.svg" alt="arrow" class="container__arrow">
+                                </div>
+                                <div class="container__item">
+                                    <div class="item__photo">
+                                        <img src="../../assets/icons/zoo.svg" alt="icon" class="item__icon">
+                                    </div>
+                                    <p class="pick-and-feed__subtext">
+                                        Payment goes to the zoo
+                                    </p>
+                                </div>
+                                <div class="container__item container__arrow">
+                                    <img src="../../assets/images/arrow.svg " alt="arrow" class="container__arrow">
+                                </div>
+                                <div class="container__item">
+                                    <div class="item__photo">
+                                        <img src="../../assets/icons/monkey.svg" alt="icon" class="item__icon">
+                                    </div>
+                                    <p class="pick-and-feed__subtext">
+                                        Your favourite animal gets delicious dish
+                                    </p>
                                 </div>
                             </div>
-                            <div class="container__item container__arrow">
-                                <img src="../../assets/images/arrow.svg" alt="arrow" class="container__arrow">
-                            </div>
-                            <div class="container__item">
-                                <div class="item__photo">
-                                    <img src="../../assets/icons/zoo.svg" alt="icon" class="item__icon">
-                                </div>
-                            </div>
-                            <div class="container__item container__arrow">
-                                <img src="../../assets/images/arrow.svg " alt="arrow" class="container__arrow">
-                            </div>
-                            <div class="container__item">
-                                <div class="item__photo">
-                                    <img src="../../assets/icons/monkey.svg" alt="icon" class="item__icon">
-                                </div>
-                            </div>
-                            <div class="container__item container__text container__text-left">
-                                <p class="pick-and-feed__text">
-                                    Pay with card
-                                </p>
-                            </div>
-                            <div class="container__item container__text container__text-center">
-                                <p class="pick-and-feed__text">
-                                    Payment goes to the zoo
-                                </p>
-                            </div>
-                            <div class="container__item container__text container__text-right">
-                                <p class="pick-and-feed__text">
-                                    Your favourite animal gets delicious dish
-                                </p>
-                            </div>
-                        </div>
-                        <form action="../donate/index.html" target="_blank">
-                        <button class="button button-round pick-and-feed__button">
-                            Feed a friend now
-                        </button>
-                    </form>
+                            <form action="../donate/index.html" target="_blank">
+                                <button class="button button-round pick-and-feed__button">
+                                    Feed a friend now
+                                </button>
+                            </form>
                     </div>
                 </div>
         </section>
@@ -304,16 +297,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="small-paragraph testimonial__text">
-                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online
-                                zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My
-                                son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
-                                instill a love for animals.
-                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online
-                                zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My
-                                son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
-                                instill a love for animals.
-                            </p>
+                            <div class="testimonial-text__container">
+                                <p class="small-paragraph testimonial__text">
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                    Online
+                                    zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                                    My
+                                    son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
+                                    instill a love for animals.
+                                </p>
+                                <p class="small-paragraph testimonial__text">
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                    Online
+                                    zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                                    My
+                                    son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
+                                    instill a love for animals.
+                                </p>
+                            </div>
                         </div>
                         <div class="testimonials__item">
                             <div class="testimonials__info">
@@ -332,20 +333,32 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="small-paragraph testimonial__text">
-                                Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
-                                met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways
-                                to instill a love for animals.The best online zoo I’ve met. My son delighted very much
-                                ljves to watch gouillas.
-                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online
-                                zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My
-                                son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
-                                instill a love for animals.
-                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online
-                                zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My
-                                son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
-                                instill a love for animals.
-                            </p>
+                            <div class="testimonial-text__container">
+                                <p class="small-paragraph testimonial__text">
+                                    Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve
+                                    met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the
+                                    ways
+                                    to instill a love for animals.The best online zoo I’ve met. My son delighted very
+                                    much
+                                    ljves to watch gouillas.
+                                </p>
+                                <p class="small-paragraph testimonial__text">
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                    Online
+                                    zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                                    My
+                                    son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
+                                    instill a love for animals.
+                                </p>
+                                <p class="small-paragraph testimonial__text">
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                    Online
+                                    zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                                    My
+                                    son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
+                                    instill a love for animals.
+                                </p>
+                            </div>
                         </div>
                         <div class="testimonials__item">
                             <div class="testimonials__info">
@@ -364,18 +377,29 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="small-paragraph testimonial__text">
-                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online
-                                zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My
-                                son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
-                                instill a love for animals.
-                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online
-                                zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
-                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online
-                                zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My
-                                son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
-                                instill a love for animals.
-                            </p>
+                            <div class="testimonial-text__container">
+                                <p class="small-paragraph testimonial__text">
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                    Online
+                                    zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                                    My
+                                    son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
+                                    instill a love for animals.
+                                </p>
+                                <p class="small-paragraph testimonial__text">
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                    Online
+                                    zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                                </p>
+                                <p class="small-paragraph testimonial__text">
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                    Online
+                                    zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                                    My
+                                    son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
+                                    instill a love for animals.
+                                </p>
+                            </div>
                         </div>
                         <div class="testimonials__item">
                             <div class="testimonials__info">
@@ -394,18 +418,27 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="small-paragraph testimonial__text">
-                                My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
-                                instill a love for animals.The best online zoo I’ve met. My son delighted very much
-                                ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The
-                                best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo
-                                is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son
-                                delighted very much ljves to watch gouillas.
-                                The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online
-                                zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My
-                                son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
-                                instill a love for animals.
-                            </p>
+                            <div class="testimonial-text__container">
+                                <p class="small-paragraph testimonial__text">
+                                    My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
+                                    instill a love for animals.The best online zoo I’ve met. My son delighted very much
+                                    ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
+                                    animals.The
+                                    best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online
+                                    zoo
+                                    is one jf the ways to instill a love for animals.The best online zoo I’ve met. My
+                                    son
+                                    delighted very much ljves to watch gouillas.
+                                </p>
+                                <p class="small-paragraph testimonial__text">
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                                    Online
+                                    zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                                    My
+                                    son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to
+                                    instill a love for animals.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <input class='scrol' type="range" value="0" min="0" max="6">
@@ -424,7 +457,7 @@
             <div class="footer__top">
                 <div class="logo__container">
                     <a href='index.html'>
-                        <p class="logo">
+                        <p class="logo footer__logo">
                             PetStory <br>
                             online
                         </p>
@@ -445,89 +478,89 @@
                 donate for volunteers
             </button>
             <div class="footer__bottom">
-               <div class="networks">
-                 <ul class="networks__list">
-                    <li class="networks__item">
-                        <a href="#">
-                        <div class="network__icon">
-                            <img src="../../assets/icons/fb.svg" alt="facebook" class="network__pic">
-                        </div>
-                        <p class="network__text">
-                            Facebook
-                        </p>
-                    </a>
-                    </li>
-                    <li class="networks__item">
-                        <a href="#">
-                        <div class="network__icon">
-                            <img src="../../assets/icons/tw.svg" alt="twitter" class="network__pic">
-                        </div>
-                        <p class="network__text">
-                            Twitter
-                        </p>
-                        </a>
-                    </li>
-                    <li class="networks__item">
-                        <a href="#">
-                        <div class="network__icon">
-                            <img src="../../assets/icons/ig.svg" alt="instagram" class="network__pic">
-                        </div>
-                        <p class="network__text">
-                            Instagram
-                        </p>
-                        </a>
-                    </li>
-                    <li class="networks__item">
-                        <a href="#">
-                        <div class="network__icon">
-                            <img src="../../assets/icons/yt.svg" alt="youtube" class="network__pic">
-                        </div>
-                        <p class="network__text">
-                            Youtube
-                        </p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__navigation">
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__item">
-                            <a class="navigation__link" href='index.html'>
-                                About
+                <div class="networks">
+                    <ul class="networks__list">
+                        <li class="networks__item">
+                            <a href="#">
+                                <div class="network__icon">
+                                    <img src="../../assets/icons/fb.svg" alt="facebook" class="network__pic">
+                                </div>
+                                <p class="network__text">
+                                    Facebook
+                                </p>
                             </a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">
-                                Map
+                        <li class="networks__item">
+                            <a href="#">
+                                <div class="network__icon">
+                                    <img src="../../assets/icons/tw.svg" alt="twitter" class="network__pic">
+                                </div>
+                                <p class="network__text">
+                                    Twitter
+                                </p>
                             </a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">
-                                Zoos
+                        <li class="networks__item">
+                            <a href="#">
+                                <div class="network__icon">
+                                    <img src="../../assets/icons/ig.svg" alt="instagram" class="network__pic">
+                                </div>
+                                <p class="network__text">
+                                    Instagram
+                                </p>
                             </a>
                         </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href='../donate/index.html'>
-                                Donate
-                            </a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#">
-                                Contact us
+                        <li class="networks__item">
+                            <a href="#">
+                                <div class="network__icon">
+                                    <img src="../../assets/icons/yt.svg" alt="youtube" class="network__pic">
+                                </div>
+                                <p class="network__text">
+                                    Youtube
+                                </p>
                             </a>
                         </li>
                     </ul>
-                </nav>
-            </div>
-            <div class="footer__info">
-                <p class="footer__text testimonial__text">
-                    Designed by Alisa Samborskaya
-                </p>
-                <p class="footer__text testimonial__text">
-                    ©RSSchool & ©Yem Digital 2021
-                                </p>
-            </div>
+                </div>
+                <div class="footer__navigation">
+                    <nav class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item navigation__item-footer">
+                                <a class="navigation__link" href='index.html'>
+                                    About
+                                </a>
+                            </li>
+                            <li class="navigation__item navigation__item-footer">
+                                <a class="navigation__link" href="#">
+                                    Map
+                                </a>
+                            </li>
+                            <li class="navigation__item navigation__item-footer">
+                                <a class="navigation__link" href="#">
+                                    Zoos
+                                </a>
+                            </li>
+                            <li class="navigation__item navigation__item-footer">
+                                <a class="navigation__link" href='../donate/index.html'>
+                                    Donate
+                                </a>
+                            </li>
+                            <li class="navigation__item navigation__item-footer" >
+                                <a class="navigation__link" href="#">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__info">
+                    <p class="footer__text ">
+                        Designed by Alisa Samborskaya
+                    </p>
+                    <p class="footer__text ">
+                        ©RSSchool & ©Yem Digital 2021
+                    </p>
+                </div>
             </div>
         </div>
     </footer>

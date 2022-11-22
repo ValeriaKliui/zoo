@@ -248,7 +248,6 @@ logo__container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
 }
 
 .big-number {
@@ -268,18 +267,45 @@ logo__container {
     width: 14px;
     height: 14px;
 }
-.scrol {
-    width: 100%;
+.animal-amount__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .scrol {
+    position: relative;
+    width: 915px;
     border-radius: 2px;
-    padding: 0 26px;
+    padding: 0 15px;
     height: 27px;
     appearance: none;
     display: block;
-    margin: 0 auto 30px auto;
     background-color: #404950;
-}
+    direction: rtl;
+} 
 
-.scrol::-webkit-slider-runnable-track {
+    .scrol:after {
+    content: "";
+    position: absolute;
+    background: #ffee2e;
+    left: 30px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+        top: 8px;
+    z-index: 1;
+    box-shadow:
+    120px 0 0 #ffee2e,
+    241px 0 0 #ffee2e,
+    362px 0 0 #ffee2e,
+    483px 0 0 #ffee2e,
+    604px 0 0 #ffee2e,
+    725px 0 0 #ffee2e,
+    846px 0 0 #ffee2e;
+    }
+  
+ .scrol::-webkit-slider-runnable-track {
     cursor: pointer;
     background-color: #72828E;
     height: 2px;
@@ -292,19 +318,64 @@ logo__container {
     width: 40px;
     height: 40px;
     -webkit-appearance: none;
-    margin-top: -20px;
+    position: relative;
+    top: -20px;
+} 
+.range__values{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+font-size: 26px;
+line-height: 36px;
+text-transform: uppercase;
+}
+.range__value {
+    display: block;
+}
+.range__value + .range__value {
+    margin-left: 70px;
+}
+.another-amount {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.dollar-sign {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 10px;
+height: 20px;
+}
+.amount__input {
+    width: 268px;
+    border: 1px solid #929699;
+border-radius: 2px;
+background-color: transparent;
+padding: 16px 9px;
+}
+    /* Chrome, Safari, Edge, Opera */
+    .amount__input::-webkit-outer-spin-button,
+    .amount__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.amount__input {
+  -moz-appearance: textfield;
 }
 .periodicity {
     display: flex;
     justify-content: center;
-}
-.radio__label {
-    margin-right: 10px;
-    display: block;
+    margin-bottom: 20px;
 }
 .radio {
     position: absolute;
     opacity: 0;
+  } 
+  .periodicity__item + .periodicity__item {
+    margin-left: 40px;
   }
   .radio + .radio__label {
     position: relative;
@@ -331,7 +402,7 @@ logo__container {
     width: 0px;
     height: 0px;
     border-radius: 50%;
-    background: #F9804B;
+    background: #4B9200;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
     opacity: 0;
     transition: .1s;

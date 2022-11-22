@@ -6,16 +6,25 @@ for (let link of links) {
     }
 }
 
-
-//cropping of testimoials 
-let testimonials = document.querySelectorAll('.small-paragraph');
+//cropping of testimonials 
+const windowInnerWidth = document.documentElement.clientWidth
+let testimonials = document.querySelectorAll('.testimonial-text__container');
 for (let testimonial of testimonials) {
-let testimonialText = testimonial.innerText;
-let slicedText = testimonialText.slice(0,478);
+let testimonialText = testimonial.innerHTML;
+let slicedText = testimonialText.slice(0,1200);
+if (windowInnerWidth === 320) {
+    slicedText = testimonialText.slice(0,190);
+}
 if (slicedText.length<testimonialText.length){
-    testimonial.textContent = slicedText.trim() + '...';
+    testimonial.innerHTML = slicedText.trim() + '...';
 }
 }
 
-
-
+//hiding of link "donate" in footer
+let linksNavigation = document.querySelectorAll('.navigation__item-footer');
+console.log(linksNavigation)
+for (let link of linksNavigation) {
+    if (link.textContent.trim() === 'Donate') {
+        link.hidden=true;
+    } 
+}
