@@ -323,12 +323,17 @@ logo__container {
 .pets__item {
     border-radius: 6px;
     border: orange solid 1px;
+    transition: transform 0.2s;
 }
-
+.pets__item:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 165, 0, 0.1);
+}
 .pets__item-img {
     border-radius: 5px 5px 0 0;
     margin: 0;
 }
+
 
 .pets__text {
     position: relative;
