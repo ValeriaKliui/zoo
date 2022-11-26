@@ -194,7 +194,7 @@ logo__container {
     position: relative;
     background: url('../../assets/images/panda.png') no-repeat;
     height: 315px;
-    object-fit: contain;
+    background-size: 100%;
 }
 
 /* section watch ends*/
@@ -777,6 +777,9 @@ h2, h3 {
 }
 .navigation-desktop {
     color: black;
+}
+.pick-and-feed {
+    padding-bottom: 50px;
 }
 .pick__container {
     padding: 30px 3px;

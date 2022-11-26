@@ -40,17 +40,21 @@ menuList.classList.toggle('navigation__list-mobile');
 //range values
 let range = document.querySelector('.scrol');
 let textValues = document.querySelectorAll('.range__value');
-if (windowInnerWidth >tabletScreen && windowInnerWidth< smallDesktop) {
-range.min = 25;
-range.max = 175;
-}
-if (windowInnerWidth< tabletScreen) {
-    range.min = 25;
-    range.max = 125;
-    }
-for (let textValue of textValues) {
-    if ( !(+textValue.textContent.slice(1) >= +range.min)  || !(+textValue.textContent.slice(1) <= +range.max))
-{
-    textValue.remove();
+window.onresize = resizeWindow();
+
+function resizeWindow (){
+    if (windowInnerWidth >tabletScreen && windowInnerWidth< smallDesktop) {
+        range.min = 25;
+        range.max = 175;
+        }
+        if (windowInnerWidth< tabletScreen) {
+            range.min = 25;
+            range.max = 125;
+            }
+        for (let textValue of textValues) {
+            if ( !(+textValue.textContent.slice(1) >= +range.min)  || !(+textValue.textContent.slice(1) <= +range.max))
+        {
+            textValue.remove();
+        }
 }
 }
