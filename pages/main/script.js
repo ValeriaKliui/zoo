@@ -1,3 +1,9 @@
+let mobileScreen = 320;
+let tabletScreen = 640;
+let smallDesktop = 1000;
+const windowInnerWidth = document.documentElement.clientWidth;
+
+
 //active page
 let links = document.querySelectorAll('.navigation__link');
 for (let link of links) {
@@ -7,19 +13,18 @@ for (let link of links) {
 }
 
 //cropping of testimonials 
-const windowInnerWidth = document.documentElement.clientWidth
 let testimonials = document.querySelectorAll('.testimonial-text__container');
 for (let testimonial of testimonials) {
 let testimonialText = testimonial.innerHTML;
 let slicedText = testimonialText.slice(0,1200);
-if (windowInnerWidth<=320) {
+if (windowInnerWidth<=mobileScreen) {
     slicedText = testimonialText.slice(0,190);
 }
-if (windowInnerWidth>=640 && windowInnerWidth<=1000) {
-    slicedText = testimonialText.slice(0,800);
-}
-if (windowInnerWidth>320 && windowInnerWidth<640) {
+if (windowInnerWidth>mobileScreen && windowInnerWidth<tabletScreen) {
     slicedText = testimonialText.slice(0,250);
+}
+if (windowInnerWidth>=tabletScreen && windowInnerWidth<=smallDesktop) {
+    slicedText = testimonialText.slice(0,800);
 }
 if (slicedText.length<testimonialText.length){
     testimonial.innerHTML = slicedText.trim() + '...';
@@ -56,7 +61,7 @@ menuList.classList.toggle('navigation__list-mobile');
 let arrowLeft = document.querySelector('.arrow-left');
 let arrowRight = document.querySelector('.arrow-right');
 window.onresize = function () {
-if (window.innerWidth>1000 && window.innerWidth<=1280) {
+if (window.innerWidth>smallDesktop && window.innerWidth<=1280) {
     arrowLeft.hidden=true;
     arrowRight.hidden=true;
 }
