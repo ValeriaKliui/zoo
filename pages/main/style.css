@@ -192,10 +192,10 @@ logo__container {
 /* section watch starts*/
 
 .watch {
-    position: relative;
-    padding-bottom: 94px;
+    position: relative; 
+    padding-bottom: 97px; 
+    background: url('../../assets/images/panda-background.png') no-repeat; 
     background-size: 100%;
-    background: url('../../assets/images/panda-background.png') no-repeat;
 }
 
 .watch__circle-container {
