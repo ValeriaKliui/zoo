@@ -15,6 +15,12 @@ let slicedText = testimonialText.slice(0,1200);
 if (windowInnerWidth<=320) {
     slicedText = testimonialText.slice(0,190);
 }
+if (windowInnerWidth>=640 && windowInnerWidth<=1000) {
+    slicedText = testimonialText.slice(0,800);
+}
+if (windowInnerWidth>320 && windowInnerWidth<640) {
+    slicedText = testimonialText.slice(0,250);
+}
 if (slicedText.length<testimonialText.length){
     testimonial.innerHTML = slicedText.trim() + '...';
 }
@@ -49,10 +55,13 @@ menuList.classList.toggle('navigation__list-mobile');
 //hide arrows on small display
 let arrowLeft = document.querySelector('.arrow-left');
 let arrowRight = document.querySelector('.arrow-right');
-window.onresize = function (e) {console.log(e.target.outerWidth, e.target.outerHeight)
+window.onresize = function () {
 if (window.innerWidth>1000 && window.innerWidth<=1280) {
     arrowLeft.hidden=true;
     arrowRight.hidden=true;
+}
+else     {arrowLeft.hidden=false;
+arrowRight.hidden=false;
 }
 }
 
