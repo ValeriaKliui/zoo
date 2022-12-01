@@ -37,6 +37,20 @@ function cropTestimonials() {
 }
 
 
+//checking validity of the form
+let input = document.querySelector('.email');
+let submitButton = document.querySelector('.email-submit');
+submitButton.classList.add('submit-invalid');
+console.log(submitButton.classList)
+input.addEventListener("input", ()=>{
+if (!input.validity.typeMismatch) {
+    submitButton.classList.remove('submit-invalid');
+    submitButton.classList.add('submit-valid');
+}
+else submitButton.classList.add('submit-invalid');
+
+})
+
 //hiding of link "donate" in footer
 let linksNavigation = document.querySelectorAll('.navigation__item-footer');
 for (let link of linksNavigation) {

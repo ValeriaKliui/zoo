@@ -615,7 +615,7 @@ input[type=range]::-webkit-slider-thumb {
     padding: 10px;
 }
 
-#submit {
+#submit-email {
     border: 1px solid #333B41;
     padding: 10px 34px;
     border-radius: 5px;
@@ -623,12 +623,12 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
-#submit:active {
+.submit-valid {
     color: #4B9200;
     border: 1px solid #4B9200;
 }
 
-#submit:invalid {
+.submit-invalid {
     color: #D31414;
     border: 1px solid #D31414;
 }
