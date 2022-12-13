@@ -284,22 +284,9 @@ logo__container {
     position: relative;
 }
 
-.arrow-left,
-.arrow-right {
-    position: absolute;
-    top: 40%;
+.arrows__container{
+    display: flex;
 }
-
-.arrow__button-left {
-    position: relative;
-    left: -85px;
-}
-
-.arrow__button-right {
-    position: relative;
-    right: -1120px;
-}
-
 .arrow__button-left,
 .arrow__button-right {
     cursor: pointer;
@@ -714,15 +701,7 @@ input[type=range]::-webkit-slider-thumb {
         gap: 108px 2%;
     }
 
-    .arrow__button-left {
-        left: 50%;
-    }
-
-    .arrow__button-right {
-        left: 900%;
-    }
-
-    .pick-and-feed__container {
+      .pick-and-feed__container {
         padding: 35px 40px;
     }
 
@@ -956,14 +935,16 @@ input[type=range]::-webkit-slider-thumb {
     }
 
     .pets__grid {
-        gap: 70px 25px;
+        gap: 30px 25px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-auto-rows: 0;
         overflow-y: hidden;
     }
-
-      
+    .arrow__button-left, .arrow__button-right {
+        width: 50px;
+        height: 50px;
+    }
 
     .pets__item-title {
         font-size: 13px;
@@ -988,21 +969,7 @@ input[type=range]::-webkit-slider-thumb {
         height: 32px;
     }
 
-    .arrow-left,
-    .arrow-right {
-        position: absolute;
-        top: 33.5%;
-    }
-
-    .arrow__button-left {
-        left: 355%;
-    }
-
-    .arrow__button-right {
-        left: 510%;
-    }
-
-    .pick-and-feed__container {
+        .pick-and-feed__container {
         padding: 20px 15px;
     }
 
