@@ -15,7 +15,7 @@ for (let link of links) {
 //cropping of testimonials 
 let testimonials = document.querySelectorAll('.testimonial-text__container');
 cropTestimonials();
-window.onresize = ()=> cropTestimonials();
+window.onresize = () => cropTestimonials();
 
 function cropTestimonials() {
     for (let testimonial of testimonials) {
@@ -42,12 +42,12 @@ let input = document.querySelector('.email');
 let submitButton = document.querySelector('.email-submit');
 submitButton.classList.add('submit-invalid');
 console.log(submitButton.classList)
-input.addEventListener("input", ()=>{
-if (!input.validity.typeMismatch) {
-    submitButton.classList.remove('submit-invalid');
-    submitButton.classList.add('submit-valid');
-}
-else submitButton.classList.add('submit-invalid');
+input.addEventListener("input", () => {
+    if (!input.validity.typeMismatch) {
+        submitButton.classList.remove('submit-invalid');
+        submitButton.classList.add('submit-valid');
+    }
+    else submitButton.classList.add('submit-invalid');
 
 })
 
@@ -68,10 +68,25 @@ let header = document.querySelector('.header');
 let logo = document.querySelector('.logo__container');
 menuNav.classList.add('hidden');
 
+let shadow = document.createElement('div');
+document.body.prepend(shadow);
 burger.onclick = () => {
+    document.body.classList.toggle('stop-scroll');
+    shadow.classList.toggle('shadow');
     burger.classList.toggle('close');
     header.append(menuNav);
     menuNav.classList.toggle('hidden');
     menuNav.classList.toggle('menu__mobile');
     menuList.classList.toggle('navigation__list-mobile');
+    document.onclick = (event) => {
+        if (!event.target.closest('nav') && !event.target.closest('.burger') && menuNav.classList.contains('menu__mobile')) {
+            document.body.classList.toggle('stop-scroll');
+            shadow.classList.toggle('shadow');
+            burger.classList.toggle('close');
+            header.append(menuNav);
+            menuNav.classList.toggle('hidden');
+            menuNav.classList.toggle('menu__mobile');
+            menuList.classList.toggle('navigation__list-mobile');
+        }
+    }
 }

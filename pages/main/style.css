@@ -801,7 +801,6 @@ input[type=range]::-webkit-slider-thumb {
 
     .header {
         padding: 0 2.5px;
-        position: fixed;
         z-index: 1200;
         width: 100%;
     }
@@ -863,7 +862,7 @@ input[type=range]::-webkit-slider-thumb {
         background-color: #ffffff;
         position: absolute;
         z-index: 2000;
-        width: 100%;
+        width: 99.4%;
         margin: 0 0 0 auto;
         border: 0.8px solid #FE9013;
         border-radius: 2px;
@@ -882,7 +881,17 @@ input[type=range]::-webkit-slider-thumb {
     .navigation-desktop {
         color: black;
     }
-
+    .shadow {
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 500;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+}
+.stop-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
     .watch {
         padding-bottom: 23px;
         background-size: cover;
@@ -890,7 +899,7 @@ input[type=range]::-webkit-slider-thumb {
     }
 
     .watch__circle-container {
-        margin-bottom: 40px;
+        margin-bottom: 80px;
         width: 100%;
         height: auto;
     }
@@ -1145,6 +1154,7 @@ input[type=range]::-webkit-slider-thumb {
 
     .watch__circle-container {
         margin-bottom: 85px;
+        margin-top: 30px;
     }
 
     .watch__circle {
