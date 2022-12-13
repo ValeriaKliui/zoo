@@ -195,7 +195,7 @@ logo__container {
     position: relative;
     background: url('../../assets/images/panda.png') no-repeat;
     height: 315px;
-    background-size: 100%;
+    background-size: cover;
 }
 
 /* section watch ends*/

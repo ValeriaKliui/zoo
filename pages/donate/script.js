@@ -55,10 +55,9 @@ burger.onclick = () => {
 //range values
 let range = document.querySelector('.scrol');
 let textValues = document.querySelectorAll('.range__value');
-window.onresize = ()=> resizeWindow() ;
+window.onresize = () => resizeWindow();
 resizeWindow();
 function resizeWindow() {
-    console.log('k')
     if (windowInnerWidth > tabletScreen && windowInnerWidth < smallDesktop) {
         range.min = 25;
         range.max = 175;
@@ -72,4 +71,20 @@ function resizeWindow() {
             textValue.remove();
         }
     }
+}
+let allRangeValues = [];
+for (let rangeValue of textValues){
+    allRangeValues.push(+rangeValue.textContent.slice(1));
+}
+let amountField = document.querySelector('.amount__input');
+amountField.oninput = () => {
+    if (amountField.value.length > 4) {
+        amountField.value = amountField.value.slice(0, 4);
+    }
+    if (allRangeValues.includes(+amountField.value)){
+           range.value = amountField.value;
+    }
+}
+range.oninput = () => {
+    amountField.value = range.value;
 }
