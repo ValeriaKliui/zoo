@@ -41,7 +41,6 @@ function cropTestimonials() {
 let input = document.querySelector('.email');
 let submitButton = document.querySelector('.email-submit');
 submitButton.classList.add('submit-invalid');
-console.log(submitButton.classList)
 input.addEventListener("input", () => {
     if (!input.validity.typeMismatch) {
         submitButton.classList.remove('submit-invalid');
@@ -89,4 +88,69 @@ burger.onclick = () => {
             menuList.classList.toggle('navigation__list-mobile');
         }
     }
+}
+
+//carousel in pets
+let arrowNext = document.querySelector('.arrow__button-right');
+let allPets = document.querySelectorAll('.pets__item');
+if (windowInnerWidth>mobileScreen && windowInnerWidth<=tabletScreen){
+allPets[4].hidden='true';
+allPets[5].hidden='true';
+allPets[6].hidden='true';
+allPets[7].hidden='true';
+let i = 0;
+arrowNext.onclick = () => {
+    allPets[i].style.display = 'none';
+    allPets[i + 1].style.display = 'none';
+    allPets[i + 2].style.display = 'none';
+    allPets[i + 3].style.display = 'none';
+    i = i + 4;
+    if (i + 2 >= allPets.length) i = 0;
+    allPets[i].style.display = 'block';
+    allPets[i + 1].style.display = 'block';
+    allPets[i + 2].style.display = 'block';
+    allPets[i + 3].style.display = 'block';
+}
+let arrowPrev = document.querySelector('.arrow__button-left');
+arrowPrev.onclick = () => {
+    allPets[i].style.display = 'none';
+    allPets[i + 1].style.display = 'none';
+    allPets[i + 2].style.display = 'none';
+    allPets[i + 3].style.display = 'none';
+    i = i - 4;
+    if (i + 2 < 0) i = allPets.length - 4;
+    allPets[i].style.display = 'block';
+    allPets[i + 1].style.display = 'block';
+    allPets[i + 2].style.display = 'block';
+    allPets[i + 3].style.display = 'block';
+}
+}
+else if (windowInnerWidth>=tabletScreen) {
+    allPets[3].hidden='true';
+    allPets[4].hidden='true';
+    allPets[5].hidden='true';    
+    allPets[6].hidden='true';
+allPets[7].hidden='true';
+let i = 0;
+arrowNext.onclick = () => {
+    allPets[i].style.display = 'none';
+    allPets[i + 1].style.display = 'none';
+    allPets[i + 2].style.display = 'none';
+    i = i + 3;
+    if (i + 3 >= allPets.length) i = 0;
+    allPets[i].style.display = 'block';
+    allPets[i + 1].style.display = 'block';
+    allPets[i + 2].style.display = 'block';
+}
+let arrowPrev = document.querySelector('.arrow__button-left');
+arrowPrev.onclick = () => {
+    allPets[i].style.display = 'none';
+    allPets[i + 1].style.display = 'none';
+    allPets[i + 2].style.display = 'none';
+    i = i - 3;
+    if (i + 1 < 0) i = allPets.length - 5;
+    allPets[i].style.display = 'block';
+    allPets[i + 1].style.display = 'block';
+    allPets[i + 2].style.display = 'block';
+}
 }

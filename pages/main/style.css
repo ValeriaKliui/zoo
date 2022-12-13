@@ -331,6 +331,16 @@ logo__container {
     margin-bottom: 70px;
 }
 
+.fade {
+    transition: all 0.2s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+  }
 .pets__item {
     border-radius: 6px;
     border: orange solid 1px;
@@ -755,7 +765,7 @@ input[type=range]::-webkit-slider-thumb {
         margin-bottom: 0;
     }
 
-    .navigation__list {
+    .navigation__list-footer {
         margin-left: 36px;
         margin-bottom: 0;
     }
@@ -905,6 +915,7 @@ input[type=range]::-webkit-slider-thumb {
     }
 
     .watch__circle {
+        margin-left: 0;
         margin-right: 30px;
         top: 50px;
         width: 237px;
@@ -949,9 +960,10 @@ input[type=range]::-webkit-slider-thumb {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-auto-rows: 0;
-        margin-bottom: 0;
         overflow-y: hidden;
     }
+
+      
 
     .pets__item-title {
         font-size: 13px;
@@ -1154,10 +1166,10 @@ input[type=range]::-webkit-slider-thumb {
 
     .watch__circle-container {
         margin-bottom: 85px;
-        margin-top: 30px;
     }
 
     .watch__circle {
+        margin-left: auto;
         margin-right: 25px;
         top: 22px;
         width: 120px;

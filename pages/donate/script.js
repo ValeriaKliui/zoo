@@ -21,21 +21,36 @@ for (let link of linksNavigation) {
 
 //burger and menu-mobile
 let burger = document.querySelector('.burger');
-
+let area = document.querySelector('body');
 let menuNav = document.querySelector('.navigation-desktop');
 let menuList = document.querySelector('.navigation__list');
 let header = document.querySelector('.header');
 let logo = document.querySelector('.logo__container');
 menuNav.classList.add('hidden');
 
+let shadow = document.createElement('div');
+document.body.prepend(shadow);
 burger.onclick = () => {
+    document.body.classList.toggle('stop-scroll');
+    shadow.classList.toggle('shadow');
     burger.classList.toggle('close');
-
     header.append(menuNav);
     menuNav.classList.toggle('hidden');
     menuNav.classList.toggle('menu__mobile');
     menuList.classList.toggle('navigation__list-mobile');
+    document.onclick = (event) => {
+        if (!event.target.closest('nav') && !event.target.closest('.burger') && menuNav.classList.contains('menu__mobile')) {
+            document.body.classList.toggle('stop-scroll');
+            shadow.classList.toggle('shadow');
+            burger.classList.toggle('close');
+            header.append(menuNav);
+            menuNav.classList.toggle('hidden');
+            menuNav.classList.toggle('menu__mobile');
+            menuList.classList.toggle('navigation__list-mobile');
+        }
+    }
 }
+
 
 //range values
 let range = document.querySelector('.scrol');

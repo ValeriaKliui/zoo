@@ -638,7 +638,6 @@ logo__container {
 
     .header {
         padding: 0 2.5px;
-        position: fixed;
         width: 100%;
         z-index: 1200;
     }
@@ -700,7 +699,7 @@ logo__container {
         background-color: #ffffff;
         position: absolute;
         z-index: 2000;
-        width: 100%;
+        width: 99.4%;
         margin: 0 0 0 auto;
         border: 0.8px solid #FE9013;
         border-radius: 2px;
@@ -719,7 +718,17 @@ logo__container {
     .navigation-desktop {
         color: black;
     }
-
+    .shadow {
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 500;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+}
+.stop-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
     .watch {
         padding-bottom: 23px;
         background: url('../../assets/images/panda-background-mobile_donation.png');
